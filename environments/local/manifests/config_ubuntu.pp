@@ -4,7 +4,7 @@
 #############################################
 
 class { 'vmbuilder_ubuntu':
-            bibboxbaseurl   => "eb3kit.bibbox.org"
+            bibboxbaseurl   => "put.here.your.domain"
 }
 
 

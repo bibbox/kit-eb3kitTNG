@@ -5,7 +5,7 @@
 
 class { 'vmbuilder_files':
         bibboxkit       => "eB3Kit",
-        bibboxbaseurl   => "eb3kit.bibbox.org",
+        bibboxbaseurl   => "put.here.your.domain",
         serveradmin     => "admin@bibbox.org",
 
         db_user         => "liferay",

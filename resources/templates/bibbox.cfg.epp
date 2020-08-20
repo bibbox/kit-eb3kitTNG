@@ -1,0 +1,29 @@
+<%- | String $bibboxkit, String $bibboxbaseurl | -%>
+
+# This is the main BIBBOX configuration file.
+bibboxkit="<%= $bibboxkit %>"
+
+# Base Configuration BIBBOX
+bibboxdir="/opt/bibbox"
+bibboxscriptfolder="sys-bibbox-vmscripts"
+bibboxapplicationstorefolder="application-store"
+bibboxinstancefolder="application-instance"
+bibboxbaseurl="<%= $bibboxbaseurl %>"
+usedinstanceids="error"
+bibboxbaseurlschema="http://"
+
+# Elastic Serach Configuration
+elasticDomainIndex="dcrb"
+elasticMachineIndex="bibbox"
+
+# Admin Roles / TEMP
+adminroles="Administrator;BIBBOX Admin;BIBBOX VM Admin"
+vmadminroles="BIBBOX VM Admin"
+
+# init configuration
+ApplicationStoreUpdate="ON"
+bibboxScriptUpdate="ON"
+
+# string for starting and stopping bibbox service
+bibboxinotifywait="inotifywait -m /etc/apache2/sites-enabled -e delete -e create -e moved_to"
+bibboxwaitseconds=5

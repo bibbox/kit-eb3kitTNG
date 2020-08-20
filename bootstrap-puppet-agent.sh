@@ -7,8 +7,10 @@ echo "##########################################################################
 echo "#                                  PUPPET AGENT                                          #"
 echo "##########################################################################################"
 
-wget https://apt.puppetlabs.com/puppetlabs-release-pc1-xenial.deb
-sudo dpkg -i puppetlabs-release-pc1-xenial.deb
+# wget https://apt.puppetlabs.com/puppetlabs-release-pc1-xenial.deb
+wget https://apt.puppetlabs.com/puppet6-release-bionic.deb
+# sudo dpkg -i puppetlabs-release-pc1-xenial.deb
+sudo dpkg -i puppet6-release-bionic.deb
 sudo dpkg --configure -a
 sudo apt-get update -q
 sudo apt-get install -q -y systemd
